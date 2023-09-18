@@ -10,3 +10,6 @@ function countNumberOfNinesInNumber(number) {
 
   return count;
 }
+
+console.log(countNumberOfNinesInNumber("1115.12578469"));
+//countNumberOfNinesInNumber(19);
