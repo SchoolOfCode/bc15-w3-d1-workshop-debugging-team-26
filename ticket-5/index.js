@@ -18,12 +18,12 @@ const shoppingCart = [
 
 let totalCost = 0;
 
-for (let i = 0; i <= shoppingCart.length; i++) {
-  const item = shoppingCart[i]["price"];
-  const costForItem = item["price"] * item["quantity"];
+for (let i = 0; i < shoppingCart.length; i++) {
+  //  const item = shoppingCart[i];  we don't need this line of code. It's not helpful.
+  const costForItem = shoppingCart[i].price * shoppingCart[i].quantity;
   totalCost += costForItem;
+  console.log(totalCost);
 }
-console.log(totalCost)
 
 const formatter = new Intl.NumberFormat("en-GB", {
   style: "currency",
